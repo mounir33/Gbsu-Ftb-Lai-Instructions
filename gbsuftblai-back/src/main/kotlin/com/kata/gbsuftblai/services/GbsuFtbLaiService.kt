@@ -73,6 +73,11 @@ class GbsuFtbLaiService {
             }
         }
 
+        if(result==""){
+            result = number
+
+        }
+
         return result
     }
 

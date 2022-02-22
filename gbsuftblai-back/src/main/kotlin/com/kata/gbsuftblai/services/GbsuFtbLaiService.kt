@@ -14,6 +14,17 @@ class GbsuFtbLaiService {
         var start = 0
         var end = number.length - 1
 
+
+        if (diffIn3.equals(0)) {
+            result += "Gbsu"
+        }
+
+        if (diffIn5.equals(0)) {
+
+            result += "Ftb"
+        }
+
+
         if (number.length > 1 && checkSameDigits(inputNumber).equals("Yes")) {
             for (i in start..end) {
 
@@ -28,11 +39,6 @@ class GbsuFtbLaiService {
 
                 result += "Lai"
             }
-        }
-
-        if (diffIn5.equals(0)) {
-
-            result += "Ftb"
         }
 
 
@@ -50,10 +56,6 @@ class GbsuFtbLaiService {
 
                 result += "Ftb"
             }
-        }
-
-        if (diffIn3.equals(0)) {
-            result += "Gbsu"
         }
 
         if (number.length > 1 && checkSameDigits(inputNumber).equals("Yes")) {

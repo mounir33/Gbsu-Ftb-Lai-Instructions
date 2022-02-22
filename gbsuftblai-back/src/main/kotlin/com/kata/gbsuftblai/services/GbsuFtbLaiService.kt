@@ -6,9 +6,8 @@ import org.springframework.stereotype.Component
 class GbsuFtbLaiService {
 
     fun convertNumber(inputNumber: Int): String {
-        val inputNumber = 9;
-        var  number = inputNumber.toString()
-        var  result=""
+        var number = inputNumber.toString()
+        var result=""
         val diffIn3 = inputNumber % 3
         val diffIn5 = inputNumber % 5
 
